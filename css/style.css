@@ -837,6 +837,10 @@ a.btn.buy {
 	text-decoration: none;
 }
 
+.paginator .page:hover {
+	background: #663d15;
+}
+
 .paginator .active span {
 	display: table-cell;
 	width: 43px;
