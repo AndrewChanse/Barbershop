@@ -89,7 +89,7 @@
 				<section class="footer-address">
 				<p>БАРБЕРШОП «БОРОДИНСКИЙ»<br>
 				АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8<br>
-				<a href="#">КАК НАС НАЙТИ?</a><br>
+				<a class="map" href="#">КАК НАС НАЙТИ?</a><br>
 				ТЕЛЕФОН: +7 (495) 666-02-66
 				</p>
 			</section>
@@ -105,6 +105,27 @@
 			</section>
 		</div>	
 	</footer>
+	<div class="modal-content">
+		<button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+		<h2 class="modal-content-title">личный кабинет</h2>
+		<p>введите пожалуйста свой логин и пароль</p>
+		<form class="login-form" action="#" method="post">
+			<input class="icon-user" type="text" name="login" placeholder="Логин">
+			<input class="icon-password" type="password" name="password" placeholder="Пароль">
+			<label class="login-checkbox">
+				<input type="checkbox" name="remember">
+				<span class="checkbox-indicator"></span>запомните меня
+			</label>
+			<a class="restore" href="#">я забыл пароль!</a>
+			<button class="btn" type="submit">ВОЙТИ</button>
+		</form>
+	</div>
+	<div class="modal-content-map">
+		<button class="modal-content-mapclose" type="button" title="Закрыть">Закрыть</button>
+		<!-- <div id="yandex-map"></div> -->
+	</div>
+	<div class="modal-overlay"></div>
 	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+	<script src="js/popup.js"></script>
 </body>
 </html>
