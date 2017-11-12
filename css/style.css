@@ -1059,10 +1059,6 @@ button.btn.buy {
 	z-index: 3;
 }
 
-.modal-content-view {
-	display: block;
-}
-
 .modal-content-close {
 	content: "";
 	position: absolute;
@@ -1202,10 +1198,9 @@ label.login-checkbox:hover {
 	margin-left: -389px;
  	width: 766px;
  	height: 560px;
- 	background: #aba9a7 url(../img/map.jpg) -465px -111px no-repeat;
+ 	/*background: #aba9a7 url(../img/map.jpg) -465px -111px no-repeat;*/
  	border: 7px solid #fff;
  	box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
- 	z-index: 3;
  }
 
  .map-view {
@@ -1223,16 +1218,17 @@ label.login-checkbox:hover {
  	background: rgba(0, 0, 0, 0.5);
  }
 
- .modal-overlay-view {
- 	display: block;
- }
+.modal-overlay-view {
+	display: block;
+}
 
- .modal-content-mapclose {
+.modal-content-mapclose {
 	content: "";
 	position: absolute;
 	top: 0;
 	right: -44px;
 	width: 23px;
+	height: 23px;
 	background-color: transparent;
 	font-size: 0;
 	border: 0;
@@ -1250,6 +1246,7 @@ label.login-checkbox:hover {
 	border-radius: 1px;
 	top: 4px;
 	left: -7px;
+	cursor: pointer;
 }
 
 .modal-content-mapclose::before {
@@ -1260,5 +1257,25 @@ transform: rotate(45deg);
 transform: rotate(-45deg);
 }
 
- 
+/*MODAL-ANIMATIONS */
+@keyframes bounce {
+	0%		{ transform: translateY(-2000px);	}
+	70%		{ transform: translateY(30px);		}
+	90%		{ transform: translateY(-10px);		}
+	100%	{ transform: translateY(0);			}
+}
 
+ .modal-content-view {
+ 	display: block;
+ 	animation: bounce 0.6s;
+}
+
+@keyframes shake {
+	0%, 100%				{ transform: translateX(0);		}
+	10%, 30%, 50%, 70%, 90% { transform: translateX(-10px);	}
+	20%, 40%, 60%, 80%		{ transform: translateX(10px);	}
+}
+
+ .modal-error {
+ 	animation: shake 0.6s;
+}
