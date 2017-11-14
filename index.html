@@ -72,9 +72,15 @@
 				<h2 class="content-title">ФОТОГАЛЕРЕЯ</h2>
 				<div class="gallery">
 					<figure class="gallery-content">
-						<img src="img/interier.jpg" alt="Интерьер">
+						<div class="slider">
+							<img src="img/interier-1.jpg" alt="Интерьер">
+							<img src="img/interier-2.jpg" alt="Интерьер">
+							<img src="img/interier-3.jpg" alt="Интерьер">
+							<img src="img/interier-4.jpg" alt="Интерьер">
+							<img src="img/interier-5.jpg" alt="Интерьер">
+						</div>
 					</figure>
-					<button class="btn button-back" type="button" disabled>НАЗАД</button><button class="btn button-forward" type="button">ВПЕРЕД</button>
+					<button class="btn button-back" type="button">НАЗАД</button><button class="btn button-forward" type="button">ВПЕРЕД</button>
 				</div>
 			</div>
 		</div>
@@ -114,7 +120,7 @@
 			<section class="footer-address">
 				<p>БАРБЕРШОП «БОРОДИНСКИЙ»<br>
 				АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8<br>
-				<a href="#">КАК НАС НАЙТИ?</a><br>
+				<a class="map" href="#">КАК НАС НАЙТИ?</a><br>
 				ТЕЛЕФОН: +7 (495) 666-02-66
 				</p>
 			</section>
@@ -146,11 +152,14 @@
 		</form>
 	</div>
 	<div class="modal-content-map">
-		<button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
-		<div id="yandex-map"></div>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.598942412417!2d30.32089461618791!3d59.93879686904785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sua!4v1510517076954" width="766" height="560" frameborder="0" style="border:0" allowfullscreen></iframe>
+		<button class="modal-content-mapclose" type="button" title="Закрыть">Закрыть</button>
+		<!-- <div id="yandex-map"></div> -->
 	</div>
 	<div class="modal-overlay"></div>
 <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 <script src="js/popup.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/slider.js"></script>
 </body>
 </html>
